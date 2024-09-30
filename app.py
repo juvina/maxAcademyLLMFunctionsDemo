@@ -139,6 +139,9 @@ async def on_message(message: cl.Message):
                       case 'get_reviews(':
                           # Handle get_reviews
                           print("running get_reviews()")
+
+                          #TODO: need to add second system prompt to get the movie_id from searching the movie title
+                          
                           # Extract movie_id from the response_message.content
                           content = response_message.content
                           movie_id_start = content.find('get_reviews(') + len('get_reviews(')
